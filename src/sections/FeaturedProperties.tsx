@@ -1,13 +1,12 @@
 "use client";
 
-import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import PropertyCard from "@/components/PropertyCard";
 import { properties } from "@/data/properties";
 
 
 export default function FeaturedProperties() {
-    const [showAll, setShowAll] = useState(false);
-    const displayedProperties = showAll ? properties : properties.slice(0, 6);
+    const router = useRouter();
     return (
         <section className="py-20 bg-gray-50">
             <div className="max-w-7xl mx-auto px-6">
@@ -25,15 +24,15 @@ export default function FeaturedProperties() {
 
                     <button
                         className="text-blue-600 font-medium hover:underline cursor-pointer"
-                        onClick={() => setShowAll(!showAll)}
+                        onClick={() => router.push('/properties')}
                     >
-                        {showAll ? "Show Less ←" : "View All →"}
+                        View All →
                     </button>
                 </div>
 
                 {/* GRID */}
                 <div className="grid md:grid-cols-3 gap-6">
-                    {displayedProperties.map((property, index) => (
+                    {properties.slice(0, 6).map((property, index) => (
                         <PropertyCard key={index} {...property} />
                     ))}
                 </div>
