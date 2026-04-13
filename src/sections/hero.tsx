@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
-        <section className="relative w-full h-screen overflow-hidden">
+        <section className="relative w-full h-screen overflow-hidden" >
 
             {/* BACKGROUND IMAGE */}
             <Image
@@ -16,7 +16,7 @@ export default function Hero() {
             />
 
             {/* DARK OVERLAY */}
-            <div className="absolute inset-0 bg-black/20"></div>
+            <div className="absolute inset-0 bg-black/10"></div>
 
             {/* CONTENT */}
             <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
