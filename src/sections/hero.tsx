@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
-        <section className="relative w-full h-[90vh] overflow-hidden">
+        <section className="relative w-full h-screen overflow-hidden">
 
             {/* BACKGROUND IMAGE */}
             <Image
                 src="https://images.unsplash.com/photo-1568605114967-8130f3a36994"
                 alt="Luxury House"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover "
                 width={1920}
                 height={1080}
             />
