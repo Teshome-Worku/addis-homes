@@ -35,9 +35,13 @@ export default function Hero() {
                         Discover modern homes and real estate deals before they hit the market.
                     </p>
 
-                    <button className="mt-10 bg-white text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
+                    <motion.button
+                        initial={{ opacity: 0, x: -100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        className="mt-10 bg-white text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
+                    >
                         Explore Properties
-                    </button>
+                    </motion.button>
                 </div>
 
             </div>
