@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Addis Homes",
-  description: "A real estate listing website for Addis Ababa, Ethiopia.",
+  title: "Addis Homes|Find Your Dream Property in Addis Ababa",
+  description: "Find your dream property in Addis Ababa with Addis Homes. Browse modern homes, apartments, and commercial spaces with ease. Your perfect home awaits!",
 };
 
 export default function RootLayout({
