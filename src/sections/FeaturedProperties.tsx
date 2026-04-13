@@ -8,7 +8,7 @@ import { properties } from "@/data/properties";
 export default function FeaturedProperties() {
     const router = useRouter();
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-gray-50" id="featured-properties">
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* HEADER */}
