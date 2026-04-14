@@ -5,6 +5,7 @@ import HowItWorks from "@/sections/HowItWorks";
 import WhyChooseUs from "@/sections/WhyChooseUs";
 import Testimonials from "@/sections/Testimonials";
 import CTA from "@/sections/CTA";
+import Footer from "@/sections/Footer";
 export default function Home() {
   return (
     <main>
@@ -15,6 +16,7 @@ export default function Home() {
       <WhyChooseUs />
       <Testimonials />
       <CTA />
+      <Footer />
 
     </main>
   );

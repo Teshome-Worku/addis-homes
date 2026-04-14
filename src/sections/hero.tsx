@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from 'next/link'
 
 export default function Hero() {
     return (
@@ -35,13 +36,16 @@ export default function Hero() {
                         Discover modern homes and real estate deals before they hit the market.
                     </p>
 
-                    <motion.button
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        className="mt-10 bg-white text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
-                    >
-                        Explore Properties
-                    </motion.button>
+
+                    <Link href="/properties">
+                        <motion.button
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            className="mt-10 bg-white text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
+                        >
+                            Explore Properties
+                        </motion.button>
+                    </Link>
                 </div>
 
             </div>
