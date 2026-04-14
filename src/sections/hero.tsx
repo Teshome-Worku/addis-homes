@@ -37,7 +37,7 @@ export default function Hero() {
                     </p>
 
 
-                    <Link href="/properties">
+                    <Link href="#featured-properties">
                         <motion.button
                             initial={{ opacity: 0, x: -100 }}
                             animate={{ opacity: 1, x: 0 }}

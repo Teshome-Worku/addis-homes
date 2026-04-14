@@ -35,16 +35,27 @@ export default function Navbar() {
 
                 {/* NAV LINKS */}
                 <nav className={`hidden md:flex gap-8 text-sm transition-colors ${isScrolled ? 'text-gray-700' : 'text-white'}`}>
-                    <a className="hover:opacity-80 transition" href="#">Home</a>
-                    <a className="hover:opacity-80 transition" href="#featured-properties">Properties</a>
-                    <a className="hover:opacity-80 transition" href="#">About</a>
-                    <a className="hover:opacity-80 transition" href="#contact">Contact</a>
+                    <Link className="hover:opacity-80 transition" href="#">
+                        Home
+                    </Link>
+                    <Link className="hover:opacity-80 transition" href="#featured-properties">
+                        Properties
+                    </Link>
+                    <Link className="hover:opacity-80 transition" href="#">
+                        About
+                    </Link>
+                    <Link className="hover:opacity-80 transition" href="#contact">
+                        Contact
+                    </Link>
                 </nav>
 
                 {/* CTA */}
-                <button className={`px-4 py-2 rounded-lg text-sm font-medium transition ${isScrolled ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-white text-black hover:opacity-90'}`}>
-                    Book Now
-                </button>
+                <Link href={`tel:+251923124355`}>
+                    <button className={`px-4 py-2 cursor-pointer rounded-lg text-sm font-medium transition ${isScrolled ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-white text-black hover:opacity-90  '}`}>
+                        Call Now
+                    </button>
+                </Link>
+
 
             </div>
         </header>
