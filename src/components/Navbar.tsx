@@ -38,7 +38,7 @@ export default function Navbar() {
                     <a className="hover:opacity-80 transition" href="#">Home</a>
                     <a className="hover:opacity-80 transition" href="#featured-properties">Properties</a>
                     <a className="hover:opacity-80 transition" href="#">About</a>
-                    <a className="hover:opacity-80 transition" href="#">Contact</a>
+                    <a className="hover:opacity-80 transition" href="#contact">Contact</a>
                 </nav>
 
                 {/* CTA */}

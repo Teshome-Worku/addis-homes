@@ -4,6 +4,7 @@ import FeaturedProperties from "@/sections/FeaturedProperties";
 import HowItWorks from "@/sections/HowItWorks";
 import WhyChooseUs from "@/sections/WhyChooseUs";
 import Testimonials from "@/sections/Testimonials";
+import CTA from "@/sections/CTA";
 export default function Home() {
   return (
     <main>
@@ -13,6 +14,7 @@ export default function Home() {
       <HowItWorks />
       <WhyChooseUs />
       <Testimonials />
+      <CTA />
 
     </main>
   );
