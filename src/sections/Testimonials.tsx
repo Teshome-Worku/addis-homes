@@ -13,9 +13,6 @@ const testimonials: Testimonial[] = [
     {
         name: "Hana T.",
         text: "Very professional service. The listings were accurate and trustworthy.",
-        role: "Real Estate Investor",
-
-
     },
     {
         name: "Dawit M.",
@@ -53,6 +50,7 @@ export default function Testimonials() {
                     ))}
                 </div>
             </div>
+
         </section>
     );
 }
