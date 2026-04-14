@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import FeaturedProperties from "@/sections/FeaturedProperties";
 import HowItWorks from "@/sections/HowItWorks";
 import WhyChooseUs from "@/sections/WhyChooseUs";
+import AboutAddisHomes from "@/sections/AboutAddisHomes";
 import Testimonials from "@/sections/Testimonials";
 import CTA from "@/sections/CTA";
 import Footer from "@/sections/Footer";
@@ -12,8 +13,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <FeaturedProperties />
-      <HowItWorks />
       <WhyChooseUs />
+      <AboutAddisHomes />
+      <HowItWorks />
       <Testimonials />
       <CTA />
       <Footer />
